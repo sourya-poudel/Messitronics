@@ -1,8 +1,6 @@
-
+![image](https://github.com/user-attachments/assets/0b0d9f89-cd07-459f-a930-c893191ce07d)
 
 This WiFi remote control car runs with ESP8266 Module also known as NodeMCU. This module is more Powerful than our traditional Arduino UNO Board. It has more memory and also more processing power. The most important thing is that It has Built-in WiFi Module. This small-sized NodeMCU comes with MicroUSB port and also can be operated with 7-12V. You can also program it with Arduino IDE.
-
- 
 
 What is WiFi Car?
 This is a simple car made up of simple components. This WiFi controlled robot runs with the wifi signal. Let me explain in detail.
@@ -10,11 +8,12 @@ This is a simple car made up of simple components. This WiFi controlled robot ru
 First, when we connect the whole circuit with the Power Supply, then the NodeMCU creates a server with the given SSID and the Password. Now we have to connect with the Hotspot and have to open the same IP. (i.e. 192.168.4.1) we can give the signal to the Browser address bar but it does not look professional.
 
 ESP8266 Smart Car:
-Suppose You want to give the Robot ESP RC to go to the forward command. Then you have to go to the browser address bar and have to type 192.168.4.1/F (We must have to declare F for forwarding in the code.) for WiFi car Using NodeMCU. In the same way, we have to declare all the preferred directions in the esp8266 wifi control code. Now, One by one typing all the IPs is not good in my opinion.
+Suppose You want to give the Robot ESP RC to go to the forward command. Then you have to go to the browser address bar and have to type 192.168.4.1/F (We must have to declare F for forwarding in the code.) for WiFi car Using NodeMCU. In the same way, we have to declare all the preferred directions in the esp8266 wifi control code. Now, One by one typing all the IPs is not good in my opinion. So, Instead of typing every time in the address bar, Here we will use an Android App and from the app, we will give the signals to the microcontroller. With the Instructions, the microcontroller gives data to the motor Driver through the RC ESP connection.
 
-So, Instead of typing every time in the address bar, Here we will use an Android App and from the app, we will give the signals to the microcontroller. With the Instructions, the microcontroller gives data to the motor Driver through the RC ESP connection.
-
- 
+ESP8266 Remote Control Car Schematics:
+Here is the schematics/ Circuit Diagram of the ESP8266 WiFi Remote Control Car. For the motor driver, I used L298N. This is a high power motor driver capable of running 5V to 35V DC Motor at a maximum of 25W.
+![image](https://github.com/user-attachments/assets/874a568e-6185-4ddc-a2aa-d3908fb7bdd0)
+We will use 3S, 12V Li-Po Battery so the maximum output per channel will be around 2A. So, It is more than enough to drive the 12.
 
 Components for a Smart car ESP8266 Project:
 Arduino UNO R3: http://bit.ly/2FZY6dT
@@ -34,13 +33,6 @@ Soldering Wire: https://bit.ly/37MGdwn
 Flux: https://bit.ly/2Yjrczf
  
 
-ESP8266 Remote Control Car Schematics:
-Here is the schematics/ Circuit Diagram of the ESP8266 WiFi Remote Control Car. For the motor driver, I used L298N. This is a high power motor driver capable of running 5V to 35V DC Motor at a maximum of 25W.
-
-We will use 3S, 12V Li-Po Battery so the maximum output per channel will be around 2A. So, It is more than enough to drive this TT Motors.
-
-remote control car schematic	
-Schematics of Wifi Control Car.
 Simple Steps for making the WiFi Control Car
 Step 1
 First Cut an MDF or any kind of Board in a Preferred Dimension such as 14CM x 10CM. Make sure that all the edges are cut in equal.
